@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+        <form id="new-task-form">
+            <input type="text"
+            id="new-task-input"
+            placeholder="What task would you like to complete today?"/>
+            <input
+            type="submit"
+            id="new-task-submit"
+            value="+" />
+
+        </form>
+    </header>
+    
+    <main>
+        <section class="task-list">
+        <h2>Tasks</h2>
+
+        <div id="tasks">
+            <!-- <div class="task">
+                <div class="content">
+                    <input 
+                    type="text"
+                    class="text" 
+                     value="Enter your new task"
+                     readonly
+                     />
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <img id="Tick" src="./Photo/tick.jpg" alt="Tick" width="25" height="25">
+                </div>
+            </div> -->
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <audio id="completion-sound" src="./Hooray.mp3" preload="auto"></audio>
+</body>
+</html>
